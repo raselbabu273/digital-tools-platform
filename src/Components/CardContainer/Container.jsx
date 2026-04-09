@@ -1,9 +1,9 @@
 import React, { use, useState } from "react";
 import Cards from "./Cards/Cards";
 
-const Container = ({toolPromise}) => {
+const Container = ({}) => {
 
-    const toolData = use(toolPromise);
+    // const toolData = use(toolPromise);
     
   const [activeTab, setActiveTab] = useState("products");
 
@@ -42,7 +42,7 @@ const Container = ({toolPromise}) => {
         </button>
       </div>
 
-      <Cards toolData={toolData}></Cards>
+      <Cards></Cards>
     </div>
   );
 };
