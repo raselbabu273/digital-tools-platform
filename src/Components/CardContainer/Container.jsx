@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
+import Cards from "./Cards/Cards";
 
-const Container = () => {
+const Container = ({toolPromise}) => {
 
+    const toolData = use(toolPromise);
+    
   const [activeTab, setActiveTab] = useState("products");
 
   return (
-    <div className="container mx-auto flex flex-col items-center justify-center min-h-[400px] bg-base-200 px-4 text-center space-y-5">
+    <div className="container mx-auto flex flex-col items-center justify-center pt-30 bg-base-200 px-4 text-center space-y-5">
       <h1 className="text-4xl md:text-5xl font-bold text-slate-900">
         Premium Digital Tools
       </h1>
@@ -15,7 +18,7 @@ const Container = () => {
         to boost your productivity and creativity.
       </p>
 
-      <div className="inline-flex p-1 bg-gray-50 border border-gray-100 rounded-full">
+      <div className="inline-flex p-1 mb-15 bg-gray-50 border border-gray-100 rounded-full">
         <button
           onClick={() => setActiveTab("products")}
           className={`px-8 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
@@ -38,6 +41,8 @@ const Container = () => {
           Cart (2)
         </button>
       </div>
+
+      <Cards toolData={toolData}></Cards>
     </div>
   );
 };
