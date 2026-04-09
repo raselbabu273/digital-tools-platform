@@ -28,8 +28,15 @@ const NavBar = () => {
         </nav>
 
         <div className="flex items-center gap-6">
-            <span><LuShoppingCart /></span>
-          <a href="" className="text-gray-600 hover:text-purple-600 font-medium">Login</a>
+          <span>
+            <LuShoppingCart />
+          </span>
+          <a
+            href=""
+            className="text-gray-600 hover:text-purple-600 font-medium"
+          >
+            Login
+          </a>
 
           <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-5 py-3 rounded-full font-semibold shadow hover:opacity-90 transition">
             Get Started

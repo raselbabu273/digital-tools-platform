@@ -4,7 +4,7 @@ import { FaPlay } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <section className="bg-base-200 min-h-screen flex items-center">
+    <section className="bg-base-200 py-21 flex items-center">
       <div className="container mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="inline-flex items-center px-4 py-1 text-sm font-semibold bg-purple-100 text-purple-600 rounded-full mb-6">
