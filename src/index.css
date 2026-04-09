@@ -9,3 +9,7 @@ body {
 .max-width{
     max-width: 85%;
 }
+
+html{
+    scrollbar-width: none;
+}

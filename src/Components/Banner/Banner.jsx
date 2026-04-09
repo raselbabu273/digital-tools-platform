@@ -24,7 +24,7 @@ const Banner = () => {
           <p className="text-gray-500 text-lg mb-6">Explore Products</p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="btn bg-linear-to-r from-indigo-600 to-purple-600 text-white px-6 py-6 rounded-full font-semibold shadow-md hover:opacity-90 transition">
+            <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-6 py-6 rounded-full font-semibold shadow-md hover:opacity-90 transition">
               Explore Products
             </button>
 
