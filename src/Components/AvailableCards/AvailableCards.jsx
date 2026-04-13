@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const AvailableCards = ({card, cartData, setCartData}) => {
   
@@ -6,12 +7,31 @@ const AvailableCards = ({card, cartData, setCartData}) => {
 
   const handleBuyNow = () => {
     setIsClicked(true);
+
+    const isFound = cartData.find(item => item.id === card.id)
+    if(isFound){
+      toast.warn("Product already in the cart.");
+      return;
+    }
+
     setCartData([...cartData, card]);
+    toast.success("Product added to the cart.");
+  };
+
+  const tagColor = {
+    'Popular': 'text-purple-600 bg-purple-100',
+    'Best Seller': 'text-green-600 bg-green-100',
+    'New': 'text-sky-600 bg-sky-100',
+    'Low': 'text-red-600 bg-red-100',
   }
+
   return (
         <div className="card flex items-center">
           <div className="relative bg-white rounded-2xl shadow-md p-10 text-left border border-gray-200">
-            <span className="absolute top-4 right-4 bg-purple-100 text-purple-600 text-sm px-3 py-1 rounded-full">
+            {/* <span className="absolute top-4 right-4 bg-purple-100 text-purple-600 text-sm px-3 py-1 rounded-full">
+              {card.tag}
+            </span> */}
+            <span className={`absolute top-4 right-4 ${tagColor[card.tag] || 'bg-gray-100'} text-sm px-3 py-1 rounded-full`}>
               {card.tag}
             </span>
 

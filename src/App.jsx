@@ -35,7 +35,7 @@ function App() {
             designed to boost your productivity and creativity.
           </p>
         </div>
-        <div className="flex justify-center p-3 border-none shadow-sm">
+        <div className="flex justify-center p-3 border-none">
           <button
             className={`btn rounded-full px-10 py-6 shadow-sm ${activeTab === "products" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-base-200"}`}
             onClick={() => setActiveTab("products")}
