@@ -1,6 +1,6 @@
 # 🚀 DigiTools Platform
 
-![Project Image](./assets/DigiTools_Platform.png)
+![alt text](image-1.png)
 
 ## 📖 Description
 This project is a modern, fully responsive e-commerce-style web application built using React.js and Tailwind CSS. It allows users to browse a collection of digital products, view detailed features, and add items to a dynamic cart system. The application includes interactive UI sections such as a toggleable product/cart view, real-time cart updates, and toast notifications for user actions like adding or removing items. Designed based on Figma, it ensures a clean and user-friendly interface across all devices while demonstrating efficient state management and component-based architecture.
