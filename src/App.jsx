@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import Cart from "./Components/Cart/Cart";
 import Steps from "./Components/Steps/Steps";
 import Plans from "./Components/Plans/Plans";
+import Workflow from "./Components/Workflow/Workflow";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -68,6 +69,8 @@ function App() {
       <Steps />
 
       <Plans />
+
+      <Workflow />
 
       <Footer />
     </>
