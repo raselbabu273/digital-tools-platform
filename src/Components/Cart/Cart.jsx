@@ -24,7 +24,7 @@ const Cart = ({ cartData, setCartData }) => {
           <div className="flex justify-center">
             <img
               className="w-20 h-20 text-red-500"
-              src="/public/cart.png"
+              src="/cart.png"
               alt=""
             />
           </div>

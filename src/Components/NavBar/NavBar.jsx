@@ -30,7 +30,7 @@ const NavBar = ({cartData}) => {
         <div className="flex items-center gap-6">
           <div className="flex items-center relative">
             <span>
-              <img src="/public/shopping-cart.png" alt="" />
+              <img src="/shopping-cart.png" alt="" />
             </span>
             <div className="hidden md:flex justify-center absolute mb-6 ml-2"><span className="text-white bg-red-400 px-2 rounded-full">{cartData.length}</span></div>
           </div>

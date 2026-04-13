@@ -21,7 +21,7 @@ const Steps = () => {
             <div className="flex justify-center">
               <img
                 className="bg-purple-100 rounded-full p-5"
-                src="/public/user.png"
+                src="/user.png"
                 alt="user"
               />
             </div>
@@ -43,7 +43,7 @@ const Steps = () => {
             <div className="flex justify-center">
               <img
                 className="bg-purple-100 rounded-full p-5"
-                src="/public/package.png"
+                src="/package.png"
                 alt="user"
               />
             </div>
@@ -64,7 +64,7 @@ const Steps = () => {
             <div className="flex justify-center">
               <img
                 className="bg-purple-100 rounded-full p-5"
-                src="/public/rocket.png"
+                src="/rocket.png"
                 alt="user"
               />
             </div>

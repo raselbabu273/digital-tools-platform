@@ -1,7 +1,7 @@
 import React, { use } from "react";
 
 const fetchPlans = async () => {
-  const res = await fetch("/public/plans.json");
+  const res = await fetch("/plans.json");
   return res.json();
 };
 
