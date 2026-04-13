@@ -6,6 +6,7 @@ import Ratings from "./Components/Ratings/Ratings";
 import Cards from "./Components/Cards/Cards";
 import Container from "./Components/CardContainer/Container";
 import { ToastContainer } from "react-toastify/unstyled";
+import Footer from "./Components/Footer/Footer";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -19,12 +20,17 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
+
       <Banner></Banner>
+
       <Ratings></Ratings>
+
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
         <Cards cardsPromise={cardsPromise}></Cards>
       </Suspense>
 
+      <Footer/>
+      
       <ToastContainer />
       
     </>

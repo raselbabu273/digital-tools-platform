@@ -4,7 +4,7 @@
     "name": "AI Writing Pro",
     "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
     "price": 29,
-    "period": "monthly",
+    "period": "Monthly",
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": [
@@ -12,14 +12,14 @@
       "50+ writing templates",
       "Grammar checker"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "writing.png"
   },
   {
     "id": 2,
     "name": "Design Templates Pack",
     "description": "2000+ premium templates for social media, presentations, and marketing materials.",
     "price": 49,
-    "period": "one-time",
+    "period": "One-time",
     "tag": "Popular",
     "tagType": "popular",
     "features": [
@@ -27,14 +27,14 @@
       "Monthly updates",
       "Commercial license"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "design-tool.png"
   },
   {
     "id": 3,
     "name": "Premium Stock Assets",
     "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
     "price": 19,
-    "period": "monthly",
+    "period": "Monthly",
     "tag": "New",
     "tagType": "new",
     "features": [
@@ -42,14 +42,14 @@
       "Commercial use",
       "No attribution"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "Group.png"
   },
   {
     "id": 4,
     "name": "Automation Toolkit",
     "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
     "price": 79,
-    "period": "monthly",
+    "period": "Monthly",
     "tag": "Popular",
     "tagType": "popular",
     "features": [
@@ -57,14 +57,14 @@
       "API access",
       "Custom workflows"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "operation.png"
   },
   {
     "id": 5,
     "name": "Resume Builder Pro",
     "description": "Create professional resumes and cover letters that land interviews.",
     "price": 15,
-    "period": "one-time",
+    "period": "One-time",
     "tag": "New",
     "tagType": "new",
     "features": [
@@ -72,14 +72,14 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "portfolio.png"
   },
   {
     "id": 6,
     "name": "Social Media Content Kit",
     "description": "Complete toolkit for creating engaging social media content across all platforms.",
     "price": 39,
-    "period": "monthly",
+    "period": "Monthly",
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": [
@@ -87,6 +87,6 @@
       "Scheduler included",
       "Analytics dashboard"
     ],
-    "iconImg": "https://i.ibb.co.com/SD2stkQT/writing-2327400-1.png"
+    "iconImg": "social-media.png"
   }
 ]
