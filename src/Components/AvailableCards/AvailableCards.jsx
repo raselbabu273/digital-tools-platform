@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const AvailableCards = ({card}) => {
+const AvailableCards = ({card, cartData, setCartData}) => {
   
   const [isClicked, setIsClicked] = useState(false);
 
   const handleBuyNow = () => {
     setIsClicked(true);
+    setCartData([...cartData, card])
   }
   return (
         <div className="card flex items-center">
@@ -15,7 +16,6 @@ const AvailableCards = ({card}) => {
             </span>
 
             <div className="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full mb-4">
-              {/* <span className="text-2xl">✏️{card.icon}</span> */}
               <img src={card.iconImg} alt="" />
             </div>
 
@@ -45,7 +45,7 @@ const AvailableCards = ({card}) => {
             </ul>
 
             <button
-              onClick={() => handleBuyNow()}
+              onClick={handleBuyNow}
               className="btn w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition"
             >
               {isClicked ? "Added To The Cart" : "Buy Now"}

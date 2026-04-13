@@ -13,11 +13,12 @@ const fetchCards = async () => {
   return res.json();
 };
 
-function App() {
-  const cardsPromise = fetchCards();
+const cardsPromise = fetchCards();
 
+function App() {
   const [activeTab, setActiveTab] = useState("products");
   const [cartData, setCartData] = useState([]);
+
   return (
     <>
       <NavBar></NavBar>
@@ -30,7 +31,10 @@ function App() {
       <div className="mt-30 text-center space-y-4">
         <div className="space-y-4">
           <h2 className="text-5xl font-bold">Premium Digital Tools</h2>
-          <p className="text-[#627382]">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+          <p className="text-[#627382]">
+            Choose from our curated collection of premium digital products
+            designed to boost your productivity and creativity.
+          </p>
         </div>
         <div className="tabs tabs-box justify-center bg-transparent">
           <input
@@ -51,10 +55,15 @@ function App() {
         </div>
       </div>
 
-      <Suspense>
-        {activeTab === "products" ? <Cards cardsPromise={cardsPromise}/> : <Cart cartData={cartData} setCartData={setCartData}/>}
-      </Suspense>
-      
+      {activeTab === "products" ? (
+        <Cards
+          cardsPromise={cardsPromise}
+          cartData={cartData}
+          setCartData={setCartData}
+        />
+      ) : (
+        <Cart cartData={cartData} />
+      )}
 
       <Footer />
 
