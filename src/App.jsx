@@ -4,7 +4,6 @@ import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NavBar/NavBar";
 import Ratings from "./Components/Ratings/Ratings";
 import Cards from "./Components/Cards/Cards";
-import { ToastContainer } from "react-toastify/unstyled";
 import Footer from "./Components/Footer/Footer";
 import Cart from "./Components/Cart/Cart";
 
@@ -36,22 +35,21 @@ function App() {
             designed to boost your productivity and creativity.
           </p>
         </div>
-        <div className="tabs tabs-box justify-center bg-transparent">
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab rounded-full w-40"
-            aria-label="Products"
+        <div className="flex justify-center p-3 border-none shadow-sm">
+          <button
+            className={`btn rounded-full px-10 py-6 shadow-sm ${activeTab === "products" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-base-200"}`}
             onClick={() => setActiveTab("products")}
             defaultChecked
-          />
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab rounded-full w-40"
-            aria-label="Cart (0)"
+          >
+            Products
+          </button>
+
+          <button
+            className={`btn rounded-full px-10 py-6 shadow-sm ${activeTab === "cart" ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-base-200"}`}
             onClick={() => setActiveTab("cart")}
-          />
+          >
+            {`Cart (${cartData.length})`}
+          </button>
         </div>
       </div>
 
@@ -62,12 +60,10 @@ function App() {
           setCartData={setCartData}
         />
       ) : (
-        <Cart cartData={cartData} />
+        <Cart cartData={cartData} setCartData={setCartData}/>
       )}
 
       <Footer />
-
-      <ToastContainer />
     </>
   );
 }

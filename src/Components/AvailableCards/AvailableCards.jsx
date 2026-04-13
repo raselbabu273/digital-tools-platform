@@ -6,7 +6,7 @@ const AvailableCards = ({card, cartData, setCartData}) => {
 
   const handleBuyNow = () => {
     setIsClicked(true);
-    setCartData([...cartData, card])
+    setCartData([...cartData, card]);
   }
   return (
         <div className="card flex items-center">
