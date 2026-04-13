@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
-const AvailableCards = ({card, setIsClicked, isClicked}) => {
+const AvailableCards = ({card}) => {
+  
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleBuyNow = () => {
+    setIsClicked(true);
+  }
   return (
         <div className="card flex items-center">
           <div className="relative bg-white rounded-2xl shadow-md p-10 text-left border border-gray-200">
@@ -39,7 +45,7 @@ const AvailableCards = ({card, setIsClicked, isClicked}) => {
             </ul>
 
             <button
-              onClick={() => setIsClicked(true)}
+              onClick={() => handleBuyNow()}
               className="btn w-full py-3 rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition"
             >
               {isClicked ? "Added To The Cart" : "Buy Now"}
