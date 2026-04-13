@@ -6,6 +6,7 @@ import Ratings from "./Components/Ratings/Ratings";
 import Cards from "./Components/Cards/Cards";
 import Footer from "./Components/Footer/Footer";
 import Cart from "./Components/Cart/Cart";
+import Steps from "./Components/Steps/Steps";
 
 const fetchCards = async () => {
   const res = await fetch("/data.json");
@@ -62,6 +63,8 @@ function App() {
       ) : (
         <Cart cartData={cartData} setCartData={setCartData}/>
       )}
+
+      <Steps />
 
       <Footer />
     </>
