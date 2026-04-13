@@ -1,7 +1,7 @@
 import React from "react";
 import { LuShoppingCart } from "react-icons/lu";
 
-const NavBar = () => {
+const NavBar = ({cartData}) => {
   return (
     <nav className="bg-base-200">
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
@@ -28,9 +28,12 @@ const NavBar = () => {
         </nav>
 
         <div className="flex items-center gap-6">
-          <span>
-            <LuShoppingCart />
-          </span>
+          <div className="flex items-center relative">
+            <span>
+              <img src="/public/shopping-cart.png" alt="" />
+            </span>
+            <div className="absolute mb-6 ml-2 flex justify-center"><span className="bg-red-400 px-2 rounded-full">{cartData.length}</span></div>
+          </div>
           <a
             href=""
             className="text-gray-600 hover:text-purple-600 font-medium"
