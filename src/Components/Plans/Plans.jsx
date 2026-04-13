@@ -31,7 +31,7 @@ const Plans = () => {
                 }`}
               >
                 {plan.highlight && (
-                  <span className="absolute mb-3 px-3 py-1 text-xs bg-yellow-200 text-black rounded-full ml-29 -mt-9">
+                  <span className="hidden lg:flex absolute mb-3 px-3 py-1 text-xs bg-yellow-200 text-black rounded-full ml-29 -mt-9">
                     Most Popular
                   </span>
                 )}

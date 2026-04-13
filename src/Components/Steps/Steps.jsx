@@ -10,7 +10,7 @@ const Steps = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         <div className="shadow-sm bg-white rounded-xl">
           <div className="flex justify-end p-6">
             <p className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">

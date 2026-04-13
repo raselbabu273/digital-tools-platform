@@ -6,17 +6,17 @@ const Cart = ({ cartData, setCartData }) => {
 
   const handlePayment = () => {
     setCartData([]);
-    toast.success("Payment Successful.")
+    toast.success("Payment Successful.");
   };
 
   const handleDelete = (item) => {
     const filteredItem = cartData.filter((data) => data.id !== item.id);
     setCartData(filteredItem);
-    toast.error("Product removed from the cart.")
+    toast.error("Product removed from the cart.");
   };
 
   return (
-    <div className="container mx-auto p-15 mt-10 grid gap-5">
+    <div className="container mx-auto p-15 mt-10 grid gap-5 shadow-sm bg-white">
       <h1 className="text-3xl font-bold">Your Cart</h1>
 
       {cartData.length === 0 ? (

@@ -9,7 +9,7 @@ const NavBar = ({cartData}) => {
           DigiTools
         </h1>
 
-        <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <nav className="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
           <a href="" className="hover:text-purple-600 transition">
             Products
           </a>
@@ -32,7 +32,7 @@ const NavBar = ({cartData}) => {
             <span>
               <img src="/public/shopping-cart.png" alt="" />
             </span>
-            <div className="absolute mb-6 ml-2 flex justify-center"><span className="bg-red-400 px-2 rounded-full">{cartData.length}</span></div>
+            <div className="hidden md:flex justify-center absolute mb-6 ml-2"><span className="text-white bg-red-400 px-2 rounded-full">{cartData.length}</span></div>
           </div>
           <a
             href=""
